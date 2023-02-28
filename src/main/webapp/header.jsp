@@ -27,7 +27,7 @@
         <button onclick="location.href='HomePageServlet'">首页</button>
         <c:if test="${empty sessionScope.user}">
             <button onclick="location.href='/e-mall/login.jsp'">登录</button>
-            <button onclick="location.href='/e-mall/register.jsp'">注册</button>
+            <button onclick="location.href='/e-mall/register.jsp'">顾客注册</button>
         </c:if>
         <c:if test="${not empty sessionScope.user}">
             <c:if test="${sessionScope.status.equals('customer')}">

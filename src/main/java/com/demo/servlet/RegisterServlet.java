@@ -39,7 +39,7 @@ public class RegisterServlet extends HttpServlet {
             PrintWriter out = response.getWriter();
             out.write("<script>");
             out.write("alert('用户名已存在！');");
-            out.write("location.href=/'register.jsp'");
+            out.write("location.href='register.jsp'");
             out.write("</script>");
             out.close();
         }
