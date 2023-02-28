@@ -25,9 +25,8 @@ public class RegisterServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
-        String status = request.getParameter("status");
         //设定表名
-        userService.setTablename(status);
+        userService.setTablename("customer");
         //注册操作
         boolean success = userService.register(new User(username,password,email));
         //判断注册结果跳转
